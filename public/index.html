@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SDS | Home</title>
-    <link rel="icon" href="images/logo.png"> <!--test on another laptop to make sure it works-->
+    <link rel="icon" href="images/icon.png"> <!--test on another laptop to make sure it works-->
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/6.0.1/firebase-app.js"></script>
@@ -20,31 +20,39 @@
 
   </head>
   <body>
-    <div id="banner">
-      <div style="text-align: center"><img src="images/banner.png" width="90%"></div>
+    <header>
+      <div class="container">
+        
+        <img src="images/logo.png" alt="logo" width="15%">
 
-      <div class="collapse navbar-collapse ml-auto" id="nav-links">
-        <ul class="navbar-nav">
-          <li class="navbar-nav">
-            <a href="about.html" class="nav-link" id="nav-link-about">About</a>
-          </li>
-            <li class="navbar-nav">
-              <a href="calendar.html" class="nav-link" id="nav-link-calendar">Calendar</a>
-          </li>
-          <li class="navbar-nav">
-            <a href="club.html" class="nav-link" id="nav-link-club">Club</a>
-          </li>
-            <li class="navbar-nav">
-              <a href="directory.html" class="nav-link" id="nav-link-directory">Directory</a>
-          </li>
-          <li class="navbar-nav">
-            <a href="courseplanning.html" class="nav-link" id="nav-link-courseplanning">Course&nbspPlanning</a>
-          </li>
-        </ul>
+        <nav>
+          <ul>
+            <li><a href=""></a>Home</li>
+            <li><a href=""></a>About Us</li>
+            <li><a href=""></a>Current Show</li>
+            <li><a href=""></a>Past Shows</li>
+            <li><a href=""></a>Getting Involved</li>
+            <li><a href=""></a>Contact Us</li>
+          </ul>
+        </nav>
+
+
       </div>
+    </header>
 
-    </div>
+    
+
+   
+
+
+
     <div id="message">
+    	<h2>Playbill</h2>
+
+    	<iframe src="playbills/Never Gonna Give You Up.pdf" width="100%" height="500px"></iframe>
+
+    	<h2>Photos</h2>
+    	 <div id="flickrembed_8"></div><div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1;"><a rel="nofollow" href="https://www.onecompare.com/apple/iphone-7-deals">model</a></div><script src='https://flickrembed.com/embed_v2.js.rand.php?container=flickrembed_8&source=flickr&layout=fixed&input=www.flickr.com/photos/123879277@N02/albums/72157677766559047&sort=2&by=album&width=&height=&theme=tiles_justified&scale=fit&speed=15000&limit=500&skin=default&autoplay=false'></script><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
       <h2>Welcome</h2>
       <p>The Website of the Stevens Dramatic Society</p>
       <p>does this work YES! hi </p> 
