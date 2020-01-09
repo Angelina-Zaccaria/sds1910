@@ -23,16 +23,23 @@
     <header>
       <div class="container">
         
-        <img src="images/logo.png" alt="logo" width="15%">
+          <img src="images/banner.png" alt="logo" width="90%">
+          
 
         <nav>
+          
           <ul>
-            <li><a href=""></a>Home</li>
-            <li><a href=""></a>About Us</li>
-            <li><a href=""></a>Current Show</li>
-            <li><a href=""></a>Past Shows</li>
-            <li><a href=""></a>Getting Involved</li>
-            <li><a href=""></a>Contact Us</li>
+            <!-- <li><a class="navbar-brand" href="index.html">
+              <div class="logo-image">
+                  <img src="images/logo.png" alt="logo" width="15%" class="img-fluid">
+              </div>
+            </a></li> -->
+            <li><a href="index.html"><div style="color:#a6160a; font-weight:bold">Home</div></a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="current-show.html">Current Show</a></li>
+            <li><a href="past-shows.html">Past Shows</a></li>
+            <li><a href="getting-involved.html">Getting Involved</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
           </ul>
         </nav>
 
@@ -47,19 +54,24 @@
 
 
     <div id="message">
-    	<h2>Playbill</h2>
-
-    	<!--<iframe src="playbills/Never Gonna Give You Up.pdf" width="100%" height="100%"></iframe>-->
-      <object data="playbills/AvenueQ.pdf" type="application/pdf" style="min-height:100vh;width:100%"></object>
-
-    	<h2>Photos</h2>
-      
+      <h1>Photos</h1>
+    
       <!--
       <iframe style="position: relative; top: 0; left: 0; width: 100%; height: 100%;" src="https://flickrembed.com/cms_embed.php?source=flickr&layout=fixed&input=www.flickr.com/photos/123879277@N02/albums/72157677766559047&sort=2&by=album&width=&height=&theme=tiles_justified&scale=fit&speed=15000&limit=500&skin=default&autoplay=false" scrolling="yes" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"><p>not be the newest <a rel="nofollow" href="https://www.onecompare.com/apple/iphone-7-deals">model</a> but its cheap</p><small>Powered by <a href="https://flickrembed.com">flickr embed</a>.</small></iframe><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
-    -->
+      -->
+      <div id="flickrembed_8"></div>
+      <div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1;">
+        <a rel="nofollow" href="https://www.onecompare.com/apple/iphone-7-deals">model</a>
+      </div>
+      <script src='https://flickrembed.com/embed_v2.js.rand.php?container=flickrembed_8&source=flickr&layout=fixed&input=www.flickr.com/photos/123879277@N02/albums/72157677766559047&sort=2&by=album&width=&height=&theme=tiles_justified&scale=fit&speed=15000&limit=50&skin=default&autoplay=false'></script>
+      <script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
 
-    	 
-       <div id="flickrembed_8"></div><div style="position:absolute; top:-70px; display:block; text-align:center; z-index:-1;"><a rel="nofollow" href="https://www.onecompare.com/apple/iphone-7-deals">model</a></div><script src='https://flickrembed.com/embed_v2.js.rand.php?container=flickrembed_8&source=flickr&layout=fixed&input=www.flickr.com/photos/123879277@N02/albums/72157677766559047&sort=2&by=album&width=&height=&theme=tiles_justified&scale=fit&speed=15000&limit=50&skin=default&autoplay=false'></script><script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+      <br><br><h1>Playbill</h1>
+
+    	<!-- <iframe src="playbills/Never Gonna Give You Up.pdf" width="100%" height="100%"></iframe> -->
+      <object data="playbills/AvenueQ.pdf" type="application/pdf" style="min-height:100vh;width:100%"></object>
+      <p><a href="playbills/AvenueQ.pdf" target="_blank">Open in new window</a></p>
+
      
       <h2>Welcome</h2>
       <p>The Website of the Stevens Dramatic Society</p>
@@ -82,15 +94,15 @@
         //
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+        // try {
+        //   let app = firebase.app();
+        //   let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+        //   document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        // } catch (e) {
+        //   console.error(e);
+        //   document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        // }
+      // });
     </script>
   </body>
 </html>
