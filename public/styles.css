@@ -10,11 +10,7 @@ header {
   background: white; 
 }
 
-/*#navbar {
-  
-}*/
-
-.container {
+#nav-container {
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -27,6 +23,7 @@ nav ul {
   list-style: none;
   overflow: hidden;
   background-color: #ffffff;
+/* the pictures go over the fixed navbar so same issue will prob happen w sticky */
   /* border-bottom: 1px solid #e0e0e0; */
 
   /* position: -webkit-sticky; /* Safari */
@@ -44,7 +41,7 @@ nav li {
   border-right: 1px solid #e0e0e0;
 }
 
-nav a {
+nav li a, .dropbtn {
   display: block;
   color: #595959;
   text-align: center;
@@ -52,8 +49,38 @@ nav a {
   text-decoration: none;
 }
 
-nav li a:hover {
+nav li a:hover, .dropdown:hover .dropbtn {
   background-color: #e0e0e0;
+}
+
+nav li.dropdown {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #595959;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  color: #a6160a;
+  font-weight: bold;
 }
 
 /* .logo-image{
@@ -71,36 +98,32 @@ nav li a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#message { 
+.content { 
   background: white; 
   max-width: 80%; 
   margin: 3% auto auto; 
   padding: 2% 2%; 
   border-radius: 3px; 
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-#message h2 { color: #a6160a; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-#message h1 { font-size: 22px; font-weight: bold; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-#message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-#message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-#message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+h1 {
+  font-size: 32px; 
+  font-weight: bold; 
+  color: #a6160a; 
+  text-align: center; 
+  margin: 0 0 20px;
+}
+
+h2 { 
+  font-size: 22px; 
+  font-weight: bold; 
+  color: rgba(0,0,0,0.6); 
+  margin: 34px 0 16px;
+}
+
 #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
 @media (max-width: 600px) {
-  body, #message { margin-top: 0; background: white; box-shadow: none; }
-  body { border-top: 16px solid #ffa100; }
+  body, .content { margin-top: 0; background: white; box-shadow: none; }
+  body { border-top: 16px solid #a6160a; }
 }

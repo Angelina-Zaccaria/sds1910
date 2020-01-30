@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SDS | Murder on the Orient Express</title>
+    <link rel="icon" href="../images/icon.png">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/6.0.1/firebase-app.js"></script>
+    <script defer src="/__/firebase/6.0.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+  </head>
+
+  <body>
+    <header>
+      <div id="nav-container">
+        <img src="../images/banner.png" alt="logo" width="90%">
+        <nav>
+          <ul>
+            <!-- <li> -->
+                <!-- <a class="navbar-brand" href="index.html"> -->
+              <!-- <div class="logo-image"> -->
+                  <!-- <img src="../images/logo.png" alt="logo" width="70vw" style="float:left"> -->
+              <!-- </div> -->
+            <!-- </a> -->
+            <!-- </li> -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about-us.html">About Us</a></li>
+            <li><a href="../current-show.html">Current Show</a></li>
+            <li class="dropdown">
+                <a href="../past-shows.html" class="dropbtn active">Past Shows</a>
+                <div class="dropdown-content">
+                  <a href="murder-on-the-orient-express.html">Murder on the Orient Express (Fall 2019)</a>
+                  <a href="i-hate-shakespeare.html">I Hate Shakespeare! (Summer 2019)</a>
+                  <a href="the-drowsy-chaperone.html">The Drowsy Chaperone (Spring 2019)</a>
+                  <a href="../past-shows.html">More shows...</a>
+                </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Getting Involved</a>
+              <div class="dropdown-content">
+                <a href="../getting-involved-students.html">Students</a>
+                <a href="../getting-involved-alumni.html">Alumni</a>
+              </div>
+            </li>
+            <li><a href="../contact-us.html">Contact Us</a></li>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script> 
+    if (maxwidth == '600px') {
+        document.getElementById('nav-container').innerHTML = 
+        '<img src="../images/logo.png" alt="logo" width="200vw" style="float:left"><li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>';
+    }
+    </script>
+
+    <div class="content">
+      <h1>AHHHHHHH Murder on the Orient Express (Fall 2019)</h1>
+      <img src="../images/MurderOnTheOrientExpress.png" alt="Murder on the Orient Express" width="100%" text-align="center">
+      <h2>Cast</h2>
+      <p>
+        <strong>Phuc Bui</strong> as Hercule Poirot
+        <br><strong>Alexander Markoulis</strong> as Monsieur Bouc
+        <br><strong>Kiera Dillon</strong> as Mary Debenham
+        <br><strong>Derek Petti</strong> as Hector MacQueen
+        <br><strong>Charlie Beall</strong> as Michel the Conductor/Head Waiter
+        <br><strong>Juila Cahn</strong> as Princess Dragomiroff
+        <br><strong>Emily Tyler</strong> as Greta Ohlsson
+        <br><strong>Leticia Gonzalez</strong> as Countess Andrenyi
+        <br><strong>Carissa Greene</strong> as Helen Hubbard
+        <br><strong>Joseph Wolverton Jr.</strong> as Colonel Arbuthnot/Samuel Ratchett
+      </p>
+      <h2>Crew</h2>
+      <p>
+          Mathieu Nagle —	Producer/Co-Props Manager
+          <br>Natalie Novacek	— Director
+          <br>Shawna Hawkins — Stage Manager
+          <br>Carl Russell — Production Manager
+          <br>Gab Poska — Business Manager/Set Designer
+          <br>Dan Cesare — Assistant Director
+          <br>Theo Sherman — Assistant Stage Manager
+          <br>Brian Collins — Light Designer
+          <br>Abby Hulse — Costume Designer
+          <br>Carly Morgan — Co-Sound Designer
+          <br>Angelina Zaccaria	— Co-Sound Designer
+          <br>Dana McGuire — Assistant Sound Design
+          <br> Matt Gorman — Master Electrician
+          <br> Alex Charpin — Co-Master Carpenter
+          <br> Emily Weeks — Co-Master Carpenter
+          <br> Derek van Rouendal — Co-Props Manager
+          <br>Alexis Paolella	— Assistant Set Design
+          <br>Emily Tyler	— Co-Hair & Makeup Designer
+          <br>Celia Friedman — Co-Hair & Makeup Designer
+      </p>
+
+      <h2>Playbill</h2>
+      <object data="../playbills/AvenueQ.pdf" type="application/pdf" style="min-height:100vh;width:100%"></object>
+      <p><a href="../playbills/AvenueQ.pdf" target="_blank">Open playbill in new window</a></p>
+
+      <h2>Photos</h2>
+      <div id="flickrembed_8"></div>
+      <script src='https://flickrembed.com/embed_v2.js.rand.php?container=flickrembed_8&source=flickr&layout=fixed&input=www.flickr.com/photos/123879277@N02/albums/72157712264057666&sort=2&by=album&width=&height=&theme=tiles_justified&scale=fit&speed=15000&limit=50&skin=default&autoplay=false'></script>
+      <script type="text/javascript">function showpics(){var a=$("#box").val();$.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?tags="+a+"&tagmode=any&format=json&jsoncallback=?",function(a){$("#images").hide().html(a).fadeIn("fast"),$.each(a.items,function(a,e){$("<img/>").attr("src",e.media.m).appendTo("#images")})})}</script>
+      <p><a href="https://www.flickr.com/photos/123879277@N02/albums/72157712264057666" target="_blank"> <!-- Open photos in new window/ -->More photos...</a></p>
+    
+    </div>
+    <p id="load">Stevens Dramatic Society est. 1910<br>Facebook /sds1910 | Instagram @sds_1910 | Twitter @sds1910 | Snapchat @sds1910</p>
+
+    <script>
+        function myFunction(x) {
+            if (x.matches) { // If mobile
+            document.body.style.backgroundColor = "yellow";
+            } else {
+            document.body.style.backgroundColor = "pink";
+            }
+        }
+        var x = window.matchMedia("(max-width: 765px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+    </script>
+
+  </body>
+</html>
