@@ -8,9 +8,12 @@ import { AboutComponent } from './about/about.component';
 import { CurrentShowComponent } from './current-show/current-show.component';
 import { PastShowsComponent } from './past-shows/past-shows.component';
 import { GettingInvolvedComponent } from './getting-involved/getting-involved.component';
+import { GettingInvolvedStudentsComponent } from './getting-involved-students/getting-involved-students.component';
+import { GettingInvolvedAlumniComponent } from './getting-involved-alumni/getting-involved-alumni.component';
 import { ContactComponent } from './contact/contact.component';
 import { PastShowsListComponent } from './past-shows-list/past-shows-list.component';
 import { FamilyTreeComponent } from './family-tree/family-tree.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +23,12 @@ import { FamilyTreeComponent } from './family-tree/family-tree.component';
     CurrentShowComponent,
     PastShowsComponent,
     GettingInvolvedComponent,
+    GettingInvolvedStudentsComponent,
+    GettingInvolvedAlumniComponent,
     ContactComponent,
     PastShowsListComponent,
-    FamilyTreeComponent
+    FamilyTreeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
